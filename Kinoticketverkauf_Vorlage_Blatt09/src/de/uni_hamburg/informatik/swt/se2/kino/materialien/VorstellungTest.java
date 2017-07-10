@@ -25,7 +25,7 @@ public class VorstellungTest
     private Uhrzeit _16_45 = Uhrzeit.get(16, 45);
     private Uhrzeit _20_15 = Uhrzeit.get(20, 15);
     private Datum _11_07_2008 = Datum.get(11, 07, 2008);
-    private Geldbetrag _12_30 = new Geldbetrag(12,30);
+    private Geldbetrag _12_30 = new Geldbetrag(12,30,true);
 
     @Before
     public void setUp()

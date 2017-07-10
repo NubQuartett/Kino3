@@ -70,11 +70,11 @@ public class StartupKinoticketverkauf
         Datum d2 = d1.naechsterTag();
         Datum d3 = d2.naechsterTag();
         
-        Geldbetrag g5 = new Geldbetrag(5,0);
-        Geldbetrag g7 = new Geldbetrag(7,0);
-        Geldbetrag g8 = new Geldbetrag(8,0);
-        Geldbetrag g9 = new Geldbetrag(9,0);
-        Geldbetrag g10 = new Geldbetrag(10,0);
+        Geldbetrag g5 = new Geldbetrag(5,0,true);
+        Geldbetrag g7 = new Geldbetrag(7,0,true);
+        Geldbetrag g8 = new Geldbetrag(8,0,true);
+        Geldbetrag g9 = new Geldbetrag(9,0,true);
+        Geldbetrag g10 = new Geldbetrag(10,0,true);
 
         final Vorstellung[] vorstellungen = {
                 // Heute

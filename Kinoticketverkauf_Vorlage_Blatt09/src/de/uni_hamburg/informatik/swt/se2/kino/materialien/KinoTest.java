@@ -70,8 +70,8 @@ public class KinoTest
 
         _d1 = Datum.get(11, 07, 2008);
         
-        _g1 = new Geldbetrag(9,0);
-        _g2 = new Geldbetrag(10,0); 
+        _g1 = new Geldbetrag(9,0,true);
+        _g2 = new Geldbetrag(10,0,true); 
         
         
 

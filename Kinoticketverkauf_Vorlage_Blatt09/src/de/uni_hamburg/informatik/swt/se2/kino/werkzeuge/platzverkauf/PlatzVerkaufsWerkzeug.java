@@ -124,7 +124,7 @@ public class PlatzVerkaufsWerkzeug
      */
     private void aktualisierePreisanzeige(Set<Platz> plaetze)
     {
-        _ausgewaehlterGesamtbetrag = new Geldbetrag(0,0);
+        _ausgewaehlterGesamtbetrag = new Geldbetrag(0,0,true);
         if (istVerkaufenMoeglich(plaetze))
         {
             Geldbetrag preis = _vorstellung.getPreisFuerPlaetze(plaetze);

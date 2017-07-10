@@ -171,13 +171,13 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
         if (eingabePreis.isEmpty())
         {
             eingabePreis = "0";
-           eingabeBetrag = new Geldbetrag(0,0);
+           eingabeBetrag = new Geldbetrag(0,0,true);
         }
         try
         {
             eingabeBetrag = new Geldbetrag(eingabePreis);
             Geldbetrag Rest = _preis.subGeldbetrag(eingabeBetrag);
-            _ausreichenderGeldbetrag = Rest.get_euro() <=0 && Rest.get_cent() <= 0;
+            _ausreichenderGeldbetrag = !Rest.get_positiv();
             zeigeRestbetrag(Rest);
         }
         catch (NumberFormatException ignore)
@@ -265,6 +265,6 @@ public class BarzahlungsWerkzeug extends ObservableSubwerkzeug
      */
     private void zeigePreis()
     {
-        _ui.getPreisTextfield().setText(_preis + " Eurocent");
+        _ui.getPreisTextfield().setText(_preis + " €");
     }
 }
